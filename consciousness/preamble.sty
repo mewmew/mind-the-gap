@@ -1,0 +1,50 @@
+\ProvidesPackage{preamble}
+
+\usepackage[utf8]{inputenc}
+\usepackage[english]{babel}
+\usepackage[margin=1in]{geometry}
+\usepackage[parfill]{parskip}
+
+% Include bibliography in the table of contents.
+%
+% Options:
+%    nottoc: don't include the table of contents in the table of contents.
+\usepackage[nottoc]{tocbibind}
+
+% Use IEEE-style references.
+\bibliographystyle{ieeetr}
+
+% Add support for links.
+%
+% Options:
+%    hidelinks: don't show red boxes around links.
+%
+% Examples:
+%    \url{http://example.org/}
+\usepackage[hidelinks]{hyperref}
+
+\usepackage{xcolor}
+
+% Add \todo command to underline text in yellow.
+%
+% Examples:
+%    \todo{foo}
+\usepackage{adjustbox}
+\newcommand{\todo}[1]{\adjustbox{bgcolor=yellow}{#1}}
+
+% Sub figures.
+%
+% Examples:
+%    \begin{figure}[htbp]
+%       \centering
+%       \begin{subfigure}[ht]{0.45\textwidth}
+%          \centering
+%          foo
+%       \end{subfigure}
+%       \begin{subfigure}[ht]{0.45\textwidth}
+%          \centering
+%          foo
+%       \end{subfigure}
+%       \caption{foo}
+%    \end{figure}
+\usepackage{subcaption}
